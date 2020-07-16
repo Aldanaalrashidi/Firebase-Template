@@ -7,16 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D209076024B9EA180069B920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D209075F24B9EA180069B920 /* Main.storyboard */; };
+		572B21BC24BA395200E0134C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 572B21BB24BA395200E0134C /* GoogleService-Info.plist */; };
+		574F520D24C0E790004197A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574F520C24C0E78F004197A9 /* Main.storyboard */; };
+		574F521124C0E7D9004197A9 /* NewTeacherInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F521024C0E7D9004197A9 /* NewTeacherInfoVC.swift */; };
+		574F521324C0E7E1004197A9 /* NewStudentReservationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F521224C0E7E0004197A9 /* NewStudentReservationVC.swift */; };
+		574F521524C0E7EF004197A9 /* TermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F521424C0E7EF004197A9 /* TermsVC.swift */; };
+		574F521724C0E7F4004197A9 /* DetailTermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F521624C0E7F4004197A9 /* DetailTermsVC.swift */; };
+		574F521924C0E7FB004197A9 /* VerifiedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F521824C0E7FA004197A9 /* VerifiedVC.swift */; };
+		574F521B24C0E800004197A9 /* HighSchoolGradesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F521A24C0E7FF004197A9 /* HighSchoolGradesVC.swift */; };
+		574F521D24C0E804004197A9 /* MiddleSchoolGradesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F521C24C0E804004197A9 /* MiddleSchoolGradesVC.swift */; };
+		574F521F24C0E809004197A9 /* SubjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F521E24C0E809004197A9 /* SubjectsVC.swift */; };
+		574F522124C0E80D004197A9 /* TeachersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F522024C0E80D004197A9 /* TeachersListVC.swift */; };
+		574F522324C0E812004197A9 /* ListCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F522224C0E812004197A9 /* ListCellVC.swift */; };
+		574F522524C0E817004197A9 /* TeacherDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F522424C0E817004197A9 /* TeacherDetailsVC.swift */; };
+		574F522824C0E859004197A9 /* Teachers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F522724C0E859004197A9 /* Teachers.swift */; };
+		574F523024C0E892004197A9 /* Lateef-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 574F522F24C0E892004197A9 /* Lateef-Regular.ttf */; };
+		574F523224C0E899004197A9 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 574F523124C0E898004197A9 /* OFL.txt */; };
+		574F523424C0E9BC004197A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574F523324C0E9BB004197A9 /* Assets.xcassets */; };
+		D209076024B9EA180069B920 /* Template.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D209075F24B9EA180069B920 /* Template.storyboard */; };
 		D209076324B9ED810069B920 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076224B9ED810069B920 /* SignInVC.swift */; };
 		D209076524B9EE8D0069B920 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076424B9EE8D0069B920 /* SignUpVC.swift */; };
 		D209076724B9FB0D0069B920 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076624B9FB0D0069B920 /* HomeVC.swift */; };
 		D209076924B9FDC60069B920 /* CreateItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076824B9FDC60069B920 /* CreateItemVC.swift */; };
 		D209076B24B9FDD80069B920 /* ItemListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076A24B9FDD80069B920 /* ItemListVC.swift */; };
-		D26B2C612469F2A200470CA2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */; };
 		D2C26FD424662807005E16A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C26FD324662807005E16A3 /* AppDelegate.swift */; };
 		D2C26FD624662807005E16A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C26FD524662807005E16A3 /* SceneDelegate.swift */; };
-		D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C26FD924662809005E16A3 /* Assets.xcassets */; };
 		D2C26FDD24662809005E16A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C26FDC24662809005E16A3 /* Preview Assets.xcassets */; };
 		D2C26FE024662809005E16A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C26FDE24662809005E16A3 /* LaunchScreen.storyboard */; };
 		D2C27013246628E0005E16A3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C27012246628E0005E16A3 /* libsqlite3.tbd */; };
@@ -59,19 +74,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		572B21BB24BA395200E0134C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		574F520C24C0E78F004197A9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		574F521024C0E7D9004197A9 /* NewTeacherInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTeacherInfoVC.swift; sourceTree = "<group>"; };
+		574F521224C0E7E0004197A9 /* NewStudentReservationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewStudentReservationVC.swift; sourceTree = "<group>"; };
+		574F521424C0E7EF004197A9 /* TermsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsVC.swift; sourceTree = "<group>"; };
+		574F521624C0E7F4004197A9 /* DetailTermsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTermsVC.swift; sourceTree = "<group>"; };
+		574F521824C0E7FA004197A9 /* VerifiedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifiedVC.swift; sourceTree = "<group>"; };
+		574F521A24C0E7FF004197A9 /* HighSchoolGradesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighSchoolGradesVC.swift; sourceTree = "<group>"; };
+		574F521C24C0E804004197A9 /* MiddleSchoolGradesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleSchoolGradesVC.swift; sourceTree = "<group>"; };
+		574F521E24C0E809004197A9 /* SubjectsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectsVC.swift; sourceTree = "<group>"; };
+		574F522024C0E80D004197A9 /* TeachersListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeachersListVC.swift; sourceTree = "<group>"; };
+		574F522224C0E812004197A9 /* ListCellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCellVC.swift; sourceTree = "<group>"; };
+		574F522424C0E817004197A9 /* TeacherDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDetailsVC.swift; sourceTree = "<group>"; };
+		574F522724C0E859004197A9 /* Teachers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teachers.swift; sourceTree = "<group>"; };
+		574F522F24C0E892004197A9 /* Lateef-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lateef-Regular.ttf"; sourceTree = "<group>"; };
+		574F523124C0E898004197A9 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		574F523324C0E9BB004197A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9377AE6CE82235456148A2D9 /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		D209075F24B9EA180069B920 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D209075F24B9EA180069B920 /* Template.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Template.storyboard; sourceTree = "<group>"; };
 		D209076224B9ED810069B920 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		D209076424B9EE8D0069B920 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		D209076624B9FB0D0069B920 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		D209076824B9FDC60069B920 /* CreateItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemVC.swift; sourceTree = "<group>"; };
 		D209076A24B9FDD80069B920 /* ItemListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListVC.swift; sourceTree = "<group>"; };
-		D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D2C26FD024662807005E16A3 /* FirebaseTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C26FD024662807005E16A3 /* حصتي.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "حصتي.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C26FD324662807005E16A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C26FD524662807005E16A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2C26FD924662809005E16A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2C26FDC24662809005E16A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2C26FDF24662809005E16A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2C26FE124662809005E16A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -159,6 +189,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		574F520B24C0E76A004197A9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D209075F24B9EA180069B920 /* Template.storyboard */,
+				574F520C24C0E78F004197A9 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		574F520F24C0E7A6004197A9 /* Aldana's View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				574F521024C0E7D9004197A9 /* NewTeacherInfoVC.swift */,
+				574F521224C0E7E0004197A9 /* NewStudentReservationVC.swift */,
+				574F521424C0E7EF004197A9 /* TermsVC.swift */,
+				574F521624C0E7F4004197A9 /* DetailTermsVC.swift */,
+				574F521824C0E7FA004197A9 /* VerifiedVC.swift */,
+				574F521A24C0E7FF004197A9 /* HighSchoolGradesVC.swift */,
+				574F521C24C0E804004197A9 /* MiddleSchoolGradesVC.swift */,
+				574F521E24C0E809004197A9 /* SubjectsVC.swift */,
+				574F522024C0E80D004197A9 /* TeachersListVC.swift */,
+				574F522224C0E812004197A9 /* ListCellVC.swift */,
+				574F522424C0E817004197A9 /* TeacherDetailsVC.swift */,
+			);
+			path = "Aldana's View Controllers";
+			sourceTree = "<group>";
+		};
+		574F522624C0E828004197A9 /* Aldana's Models */ = {
+			isa = PBXGroup;
+			children = (
+				574F522724C0E859004197A9 /* Teachers.swift */,
+			);
+			path = "Aldana's Models";
+			sourceTree = "<group>";
+		};
+		574F522924C0E862004197A9 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				574F522F24C0E892004197A9 /* Lateef-Regular.ttf */,
+				574F523124C0E898004197A9 /* OFL.txt */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		8378283248B71B8695152817 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,7 +268,7 @@
 		D2C26FD124662807005E16A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2C26FD024662807005E16A3 /* FirebaseTemplate.app */,
+				D2C26FD024662807005E16A3 /* حصتي.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,14 +276,17 @@
 		D2C26FD224662807005E16A3 /* FirebaseTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				574F520B24C0E76A004197A9 /* Storyboards */,
 				D209076124B9ED660069B920 /* ViewControllers */,
-				D26B2C602469F2A200470CA2 /* GoogleService-Info.plist */,
 				D2C26FD324662807005E16A3 /* AppDelegate.swift */,
 				D2C26FD524662807005E16A3 /* SceneDelegate.swift */,
-				D209075F24B9EA180069B920 /* Main.storyboard */,
+				574F520F24C0E7A6004197A9 /* Aldana's View Controllers */,
+				574F522624C0E828004197A9 /* Aldana's Models */,
 				D2C2703E24662C5A005E16A3 /* Networking */,
 				D2C2705324662CAA005E16A3 /* Models */,
-				D2C26FD924662809005E16A3 /* Assets.xcassets */,
+				574F522924C0E862004197A9 /* Font */,
+				572B21BB24BA395200E0134C /* GoogleService-Info.plist */,
+				574F523324C0E9BB004197A9 /* Assets.xcassets */,
 				D2C26FDE24662809005E16A3 /* LaunchScreen.storyboard */,
 				D2C26FE124662809005E16A3 /* Info.plist */,
 				D2C2703524662C5A005E16A3 /* Extensions */,
@@ -324,7 +401,7 @@
 			);
 			name = FirebaseTemplate;
 			productName = FirebaseTemplate;
-			productReference = D2C26FD024662807005E16A3 /* FirebaseTemplate.app */;
+			productReference = D2C26FD024662807005E16A3 /* حصتي.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -366,10 +443,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2C26FE024662809005E16A3 /* LaunchScreen.storyboard in Resources */,
-				D209076024B9EA180069B920 /* Main.storyboard in Resources */,
+				D209076024B9EA180069B920 /* Template.storyboard in Resources */,
+				572B21BC24BA395200E0134C /* GoogleService-Info.plist in Resources */,
+				574F520D24C0E790004197A9 /* Main.storyboard in Resources */,
 				D2C26FDD24662809005E16A3 /* Preview Assets.xcassets in Resources */,
-				D2C26FDA24662809005E16A3 /* Assets.xcassets in Resources */,
-				D26B2C612469F2A200470CA2 /* GoogleService-Info.plist in Resources */,
+				574F523024C0E892004197A9 /* Lateef-Regular.ttf in Resources */,
+				574F523424C0E9BC004197A9 /* Assets.xcassets in Resources */,
+				574F523224C0E899004197A9 /* OFL.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,24 +502,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				574F521524C0E7EF004197A9 /* TermsVC.swift in Sources */,
 				D2C26FD424662807005E16A3 /* AppDelegate.swift in Sources */,
 				D2C2704C24662C6E005E16A3 /* Networking.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
 				D209076724B9FB0D0069B920 /* HomeVC.swift in Sources */,
+				574F521324C0E7E1004197A9 /* NewStudentReservationVC.swift in Sources */,
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
 				D2C26FD624662807005E16A3 /* SceneDelegate.swift in Sources */,
+				574F522324C0E812004197A9 /* ListCellVC.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
 				D209076924B9FDC60069B920 /* CreateItemVC.swift in Sources */,
+				574F521D24C0E804004197A9 /* MiddleSchoolGradesVC.swift in Sources */,
+				574F522124C0E80D004197A9 /* TeachersListVC.swift in Sources */,
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
+				574F522524C0E817004197A9 /* TeacherDetailsVC.swift in Sources */,
 				D209076B24B9FDD80069B920 /* ItemListVC.swift in Sources */,
+				574F521F24C0E809004197A9 /* SubjectsVC.swift in Sources */,
 				D2C2705224662C9A005E16A3 /* User.swift in Sources */,
+				574F521124C0E7D9004197A9 /* NewTeacherInfoVC.swift in Sources */,
 				D209076324B9ED810069B920 /* SignInVC.swift in Sources */,
 				D2C2705024662C73005E16A3 /* NetworkingSignUp.swift in Sources */,
+				574F521B24C0E800004197A9 /* HighSchoolGradesVC.swift in Sources */,
+				574F522824C0E859004197A9 /* Teachers.swift in Sources */,
+				574F521924C0E7FB004197A9 /* VerifiedVC.swift in Sources */,
 				D2C2704524662C63005E16A3 /* ImageLoader.swift in Sources */,
 				D2C2704824662C63005E16A3 /* DateFromatter.swift in Sources */,
 				D2C2704F24662C73005E16A3 /* NetowrkableAuth.swift in Sources */,
+				574F521724C0E7F4004197A9 /* DetailTermsVC.swift in Sources */,
 				D2C2704D24662C6E005E16A3 /* NetworkingImages.swift in Sources */,
 				D209076524B9EE8D0069B920 /* SignUpVC.swift in Sources */,
 			);
@@ -598,10 +690,10 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.khatma.com;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldana.alrashidi;
+				PRODUCT_NAME = "حصتي";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -630,10 +722,10 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.khatma.com;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldana.alrashidi;
+				PRODUCT_NAME = "حصتي";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
