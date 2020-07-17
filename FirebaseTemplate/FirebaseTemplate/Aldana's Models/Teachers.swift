@@ -23,12 +23,12 @@ struct Teacher: Codable{
     var stage: String
 }
 
-struct Grade {
+struct Grade: Codable{
     var title: String
     var subjects: [Subject]
 }
 
-struct Subject{
+struct Subject: Codable{
     var title: String
     var teachers: [Teacher]
 }
@@ -73,7 +73,7 @@ var english7: Subject = Subject(title: "English", teachers: [
     Teacher(name: "أحمد", teachergrade: "الصف السابع", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السابع", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
     
 ])
- var arabic7: Subject = Subject(title: "Arabic", teachers: [
+var arabic7: Subject = Subject(title: "Arabic", teachers: [
     Teacher(name: "أحمد", teachergrade: "الصف السابع", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السابع", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
     
 ])
