@@ -9,9 +9,9 @@
 import UIKit
 
 class SubjectsVC: UIViewController {
-    var didSelect: main!
+    var didSelect: Grade!
     var gradeTag: Int!
-    var finalSubject: [NewTeachers] = []
+    var finalSubject: Subject!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,13 +23,13 @@ class SubjectsVC: UIViewController {
 //         print("\(gradeTag)U🍕")
         switch sender.tag {
         case 0:
-            finalSubject = didSelect.subject[sender.tag]
+            finalSubject = didSelect.subjects[sender.tag]
         case 1:
-            finalSubject = didSelect.subject[sender.tag]
+            finalSubject = didSelect.subjects[sender.tag]
         case 2:
-            finalSubject = didSelect.subject[sender.tag]
+            finalSubject = didSelect.subjects[sender.tag]
         case 3:
-            finalSubject = didSelect.subject[sender.tag]
+            finalSubject = didSelect.subjects[sender.tag]
         default:
             print("didn't found data")
         }
@@ -44,6 +44,6 @@ class SubjectsVC: UIViewController {
         // Pass the selected object to the new view controller.
         
         let vc = segue.destination as! TeachersListVC
-        vc.teacher = finalSubject
+        vc.subject = finalSubject
     }
 }

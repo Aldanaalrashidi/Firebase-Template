@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import CodableFirebase
 
 class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
@@ -104,8 +106,19 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         placeHolder()
     }
     
+    var collectionName = ""
+    var teacher = Teacher(name: "test", teachergrade: "", subjectName: "", email: "", suggestedWeekdays: "", cost: "", image: "", stage: "")
+    
     @IBAction func add(_ sender: UIButton) {
         error()
+        if stageField.text == "المرحلة الثانوية"{
+            collectionName = "HighSchool"
+        }
+        Networking.createItem(teacher, inCollection: collectionName, success: {
+            print(Auth.auth().currentUser!.uid)
+        }) { (error) in
+            print(error)
+        }
     }
     
     //Error if text fields are empty
@@ -163,7 +176,7 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         if teacherGenderField.text != "ذكر" || stageField.text != "المرحلة الثانوية" {
             infoError()
         }
-        else if teacherGenderField.text != "ذكر" || stageField.text != "المرحلة الثانوية" {
+        else if teacherGenderField.text != "أنثى" || stageField.text != "المرحلة المتوسطة" {
              infoError()
         }
     }

@@ -9,7 +9,7 @@
 import UIKit
 
 class TeachersListVC: UITableViewController {
-    var teacher: [NewTeachers] = []
+    var subject: Subject!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
@@ -22,11 +22,11 @@ class TeachersListVC: UITableViewController {
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return teacher.count
+        return subject.teachers.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let index = teacher[indexPath.row]
+        let index = subject.teachers[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "retaj", for: indexPath) as! ListCellVC
 
         // Configure the cell...
@@ -86,7 +86,7 @@ class TeachersListVC: UITableViewController {
         if segue.identifier == "retaj"{
             let index = sender as! Int
             let vc = segue.destination as! TeacherDetailsVC
-            vc.teachers = teacher[index]
+            vc.teachers = subject.teachers[index]
         }
     }
     

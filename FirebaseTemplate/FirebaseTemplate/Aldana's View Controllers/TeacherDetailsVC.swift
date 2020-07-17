@@ -9,7 +9,7 @@
 import UIKit
 
 class TeacherDetailsVC: UIViewController {
-    var teachers: NewTeachers!
+    var teachers: Teacher!
     @IBOutlet weak var teacherNameLabel: UILabel!
     @IBOutlet weak var teacherStageLabel: UILabel!
     @IBOutlet weak var teacherGradeLabel: UILabel!

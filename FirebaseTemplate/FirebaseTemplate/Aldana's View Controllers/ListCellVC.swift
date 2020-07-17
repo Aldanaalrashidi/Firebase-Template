@@ -23,7 +23,7 @@ class ListCellVC: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func callCell(for teacher: NewTeachers) {
+    func callCell(for teacher: Teacher) {
         teacherName.text = teacher.name
     }
 }

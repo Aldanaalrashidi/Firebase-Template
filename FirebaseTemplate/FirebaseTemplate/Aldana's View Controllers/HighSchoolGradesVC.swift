@@ -9,7 +9,7 @@
 import UIKit
 
 class HighSchoolGradesVC: UIViewController {
-    var selectedGrade: main!
+    var selectedGrade: Grade!
     var selectedTag: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
