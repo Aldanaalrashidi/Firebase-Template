@@ -9,23 +9,22 @@
 import UIKit
 
 class HighSchoolGradesVC: UIViewController {
-    var selectedGrade: Grade!
+    var selectedGrade: String!
     var selectedTag: Int!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
+    
+
     @IBAction func ifTapped(_ sender: UIButton) {
         switch sender.tag {
         case 0:
-            selectedGrade = grades[sender.tag]
+            selectedGrade = TENTH_GRADE
             selectedTag = sender.tag
         case 1:
-            selectedGrade = grades[sender.tag]
+            selectedGrade = ELEVENTH_GRADE
             //   print("\(selectedGrade)❌")
             selectedTag = sender.tag
         case 2:
-            selectedGrade = grades[sender.tag]
+            selectedGrade = TWELVETH_GRADE
             //            print("\(selectedGrade)❌")
             selectedTag = sender.tag
         default:
@@ -41,7 +40,7 @@ class HighSchoolGradesVC: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         let vc = segue.destination as! SubjectsVC
-        vc.didSelect = selectedGrade
+        vc.didSelect = Grade(title: selectedGrade, subjects: [])
         vc.gradeTag = selectedTag
     }
 }

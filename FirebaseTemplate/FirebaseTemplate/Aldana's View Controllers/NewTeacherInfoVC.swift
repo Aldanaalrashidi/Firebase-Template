@@ -12,6 +12,7 @@ import CodableFirebase
 
 class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    var selectedTeacher: Teacher = Teacher(name: "", teachergrade: "", subjectName: "", email: "", suggestedWeekdays: "", cost: "", image: "", stage: "")
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
            return 1
        }
@@ -50,27 +51,32 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
            }
        }
 
-       func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-           switch pickerView.tag {
-           case 1:
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch pickerView.tag {
+        case 1:
             teacherGenderField.text = gender[row]
-               teacherGenderField.resignFirstResponder()
-           case 2:
-               stageField.text = stage[row]
-               stageField.resignFirstResponder()
-           case 3:
-               classField.text = classes[row]
-               classField.resignFirstResponder()
-           case 4:
-               subjectField.text = subject[row]
-               subjectField.resignFirstResponder()
-           case 5:
-               classCostField.text = cost[row]
-               classCostField.resignFirstResponder()
-           default:
-               return
-           }
-       }
+            teacherGenderField.resignFirstResponder()
+        // selectedTeacher.gender = gender[row]
+        case 2:
+            stageField.text = stage[row]
+            stageField.resignFirstResponder()
+            selectedTeacher.stage = stage[row]
+        case 3:
+            classField.text = classes[row]
+            classField.resignFirstResponder()
+            selectedTeacher.teachergrade = classes[row]
+        case 4:
+            subjectField.text = subject[row]
+            subjectField.resignFirstResponder()
+            selectedTeacher.subjectName = subject[row]
+        case 5:
+            classCostField.text = cost[row]
+            classCostField.resignFirstResponder()
+            selectedTeacher.cost = cost[row]
+        default:
+            return
+        }
+    }
     
     @IBOutlet weak var teacherNameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
@@ -85,8 +91,8 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
     //Picker view display
     let gender = ["أنثى", "ذكر"]
     let stage = ["المرحلة المتوسطة", "المرحلة الثانوية"]
-    let classes = ["الصف السادس", "الصف السابع", "الصف الثامن", "تاصف التاسع", "الصف العاشر", "الصف الحادي عشر", "الصف الثاني عشر"]
-    let subject = ["اللغة العربية", "اللغة الانجليزية", "التربية الاسلامية", "رياضيات"]
+    let classes = [SIXTH_GRADE, SEVENTH_GRADE, EIGHTH_GRADE, NINTH_GRADE, TENTH_GRADE, ELEVENTH_GRADE, TWELVETH_GRADE]
+    let subject = [ENGLISH, ARABIC, MATH, ISLAM]
     let cost = ["٥ دك", "٦ دك", "٧ دك", "٨ دك", "٩ دك", "١٠ دك", "١١ دك", "١٢ دك", "١٣ دك", "١٤ دك", "١٥ دك", "١٦ دك", "١٧ دك", "١٨ دك", "١٩ دك", "٢٠ دك", "٢١ دك", "٢٢ دك", "٢٣ دك", "٢٤ دك", "٢٥ دك"]
     
     //PickerView
@@ -106,19 +112,24 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         placeHolder()
     }
     
-    var collectionName = ""
-    var teacher = Teacher(name: "test", teachergrade: "", subjectName: "", email: "", suggestedWeekdays: "", cost: "", image: "", stage: "")
+    // var collectionName = ""
+    //var teacher = Teacher(name: "test", teachergrade: "", subjectName: "", email: "", suggestedWeekdays: "", cost: "", image: "", stage: "")
     
     @IBAction func add(_ sender: UIButton) {
         error()
-        if stageField.text == "المرحلة الثانوية"{
-            collectionName = "HighSchool"
-        }
-        Networking.createItem(teacher, inCollection: collectionName, success: {
-            print(Auth.auth().currentUser!.uid)
-        }) { (error) in
-            print(error)
-        }
+        newTeacher()
+//        if stageField.text == "المرحلة الثانوية"{
+//            collectionName = "HighSchool"
+//        }
+        // 1. Retreive the object
+        // 2. Update it
+        // 3. Send it back
+        let encodedTeacher = [try! FirebaseEncoder().encode(selectedTeacher)]
+        Firestore
+        .firestore()
+            .collection(selectedTeacher.teachergrade)
+            .document(selectedTeacher.subjectName)
+            .updateData(["teachers" : FieldValue.arrayUnion(encodedTeacher)])
     }
     
     //Error if text fields are empty
@@ -130,6 +141,11 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
             alertController.addAction(restartAction)
             present(alertController, animated: true, completion: nil)
         }
+    }
+    func newTeacher() {
+        selectedTeacher.name = teacherNameField.text ?? "سعد"
+        selectedTeacher.email = emailField.text ?? "saad@gmail.com"
+        selectedTeacher.suggestedWeekdays = daysOfWeekField.text ?? "الثلاثاء، الخميس"
     }
     
     func picker(){

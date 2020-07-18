@@ -24,6 +24,9 @@
 		574F523024C0E892004197A9 /* Lateef-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 574F522F24C0E892004197A9 /* Lateef-Regular.ttf */; };
 		574F523224C0E899004197A9 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 574F523124C0E898004197A9 /* OFL.txt */; };
 		574F523424C0E9BC004197A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574F523324C0E9BB004197A9 /* Assets.xcassets */; };
+		5753FA3F24C25632008A34CD /* GradesDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5753FA3E24C25632008A34CD /* GradesDataset.swift */; };
+		5753FA4124C25652008A34CD /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5753FA4024C25652008A34CD /* Grade.swift */; };
+		5753FA4324C2565D008A34CD /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5753FA4224C2565D008A34CD /* Subject.swift */; };
 		D209076024B9EA180069B920 /* Template.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D209075F24B9EA180069B920 /* Template.storyboard */; };
 		D209076324B9ED810069B920 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076224B9ED810069B920 /* SignInVC.swift */; };
 		D209076524B9EE8D0069B920 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209076424B9EE8D0069B920 /* SignUpVC.swift */; };
@@ -91,6 +94,9 @@
 		574F522F24C0E892004197A9 /* Lateef-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lateef-Regular.ttf"; sourceTree = "<group>"; };
 		574F523124C0E898004197A9 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		574F523324C0E9BB004197A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5753FA3E24C25632008A34CD /* GradesDataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesDataset.swift; sourceTree = "<group>"; };
+		5753FA4024C25652008A34CD /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		5753FA4224C2565D008A34CD /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		9377AE6CE82235456148A2D9 /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D209075F24B9EA180069B920 /* Template.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Template.storyboard; sourceTree = "<group>"; };
@@ -220,6 +226,9 @@
 			isa = PBXGroup;
 			children = (
 				574F522724C0E859004197A9 /* Teachers.swift */,
+				5753FA4024C25652008A34CD /* Grade.swift */,
+				5753FA3E24C25632008A34CD /* GradesDataset.swift */,
+				5753FA4224C2565D008A34CD /* Subject.swift */,
 			);
 			path = "Aldana's Models";
 			sourceTree = "<group>";
@@ -513,10 +522,12 @@
 				574F522324C0E812004197A9 /* ListCellVC.swift in Sources */,
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
+				5753FA4124C25652008A34CD /* Grade.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
 				D209076924B9FDC60069B920 /* CreateItemVC.swift in Sources */,
 				574F521D24C0E804004197A9 /* MiddleSchoolGradesVC.swift in Sources */,
 				574F522124C0E80D004197A9 /* TeachersListVC.swift in Sources */,
+				5753FA4324C2565D008A34CD /* Subject.swift in Sources */,
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
 				574F522524C0E817004197A9 /* TeacherDetailsVC.swift in Sources */,
 				D209076B24B9FDD80069B920 /* ItemListVC.swift in Sources */,
@@ -528,6 +539,7 @@
 				574F521B24C0E800004197A9 /* HighSchoolGradesVC.swift in Sources */,
 				574F522824C0E859004197A9 /* Teachers.swift in Sources */,
 				574F521924C0E7FB004197A9 /* VerifiedVC.swift in Sources */,
+				5753FA3F24C25632008A34CD /* GradesDataset.swift in Sources */,
 				D2C2704524662C63005E16A3 /* ImageLoader.swift in Sources */,
 				D2C2704824662C63005E16A3 /* DateFromatter.swift in Sources */,
 				D2C2704F24662C73005E16A3 /* NetowrkableAuth.swift in Sources */,

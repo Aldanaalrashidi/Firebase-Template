@@ -15,12 +15,25 @@ class SubjectsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        Networking.getListOf(COLLECTION_NAME: "\(didSelect.title)") { (subjects: [Subject]) in
+            if subjects.count == 4{
+                self.didSelect.subjects = subjects
+            }
+        }
+        
     }
     
     @IBAction func subjectTapped(_ sender: UIButton) {
 //        print("\(didSelect)U🍕")
 //        print("\(sender.tag)U🍕")
 //         print("\(gradeTag)U🍕")
+        guard didSelect.subjects.count > 0 else{
+            let alertController = UIAlertController(title: "Ops", message: "Wait til the subjects get loaded!", preferredStyle: .alert)
+            alertController.addAction(.init(title: "Ok", style: .cancel, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
         switch sender.tag {
         case 0:
             finalSubject = didSelect.subjects[sender.tag]
