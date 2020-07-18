@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571A2F0C24C341FE00DAB4BF /* uploudImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A2F0B24C341FE00DAB4BF /* uploudImage.swift */; };
 		572B21BC24BA395200E0134C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 572B21BB24BA395200E0134C /* GoogleService-Info.plist */; };
 		574F520D24C0E790004197A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574F520C24C0E78F004197A9 /* Main.storyboard */; };
 		574F521124C0E7D9004197A9 /* NewTeacherInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F521024C0E7D9004197A9 /* NewTeacherInfoVC.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		571A2F0B24C341FE00DAB4BF /* uploudImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = uploudImage.swift; sourceTree = "<group>"; };
 		572B21BB24BA395200E0134C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		574F520C24C0E78F004197A9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		574F521024C0E7D9004197A9 /* NewTeacherInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTeacherInfoVC.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				5753FA4024C25652008A34CD /* Grade.swift */,
 				5753FA3E24C25632008A34CD /* GradesDataset.swift */,
 				5753FA4224C2565D008A34CD /* Subject.swift */,
+				571A2F0B24C341FE00DAB4BF /* uploudImage.swift */,
 			);
 			path = "Aldana's Models";
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				D209076924B9FDC60069B920 /* CreateItemVC.swift in Sources */,
 				574F521D24C0E804004197A9 /* MiddleSchoolGradesVC.swift in Sources */,
 				574F522124C0E80D004197A9 /* TeachersListVC.swift in Sources */,
+				571A2F0C24C341FE00DAB4BF /* uploudImage.swift in Sources */,
 				5753FA4324C2565D008A34CD /* Subject.swift in Sources */,
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
 				574F522524C0E817004197A9 /* TeacherDetailsVC.swift in Sources */,

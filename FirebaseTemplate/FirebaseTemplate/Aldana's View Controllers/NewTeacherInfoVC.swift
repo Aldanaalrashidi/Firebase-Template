@@ -8,14 +8,18 @@
 
 import UIKit
 import Firebase
+import BSImagePicker
 import CodableFirebase
+import Photos
  
 class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-   var selectedTeacher: Teacher = Teacher(name: "", teachergrade: "", subjectName: "", email: "", suggestedWeekdays: "", cost: "", stage: "")
+   var selectedTeacher: Teacher = Teacher(name: "", teachergrade: "", subjectName: "", email: "", suggestedWeekdays: "", cost: "", stage: "",imageurl: URL(string: ""))
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
            return 1
        }
+    var ImageURL : URL?
+    
        
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
            switch pickerView.tag {
@@ -87,7 +91,10 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
     @IBOutlet weak var classField: UITextField!
     @IBOutlet weak var subjectField: UITextField!
     @IBOutlet weak var addBtn: UIButton!
+    @IBOutlet weak var teacherAddImg: UIImageView!
+    @IBOutlet weak var addImgBtn1: UIButton!
     
+   
     //Picker view display
     let gender = ["أنثى", "ذكر"]
     let stage = ["المرحلة المتوسطة", "المرحلة الثانوية"]
@@ -131,6 +138,26 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
             .document(selectedTeacher.subjectName)
             .updateData(["teachers" : FieldValue.arrayUnion(encodedTeacher)])
     }
+    @IBAction func addImgBtn(_ sender: UIButton) {
+        
+        let imagePicker = ImagePickerController()
+        imagePicker.settings.selection.max = 1
+
+               presentImagePicker(imagePicker, select: { (asset) in
+                   // User selected an asset. Do something with it. Perhaps begin processing/upload?
+
+               }, deselect: { (asset : PHAsset) in
+                   // User deselected an asset. Cancel whatever you did when asset was selected.
+               }, cancel: { (assets : [PHAsset]) in
+                   // User canceled selection.
+               }, finish: { (assets : [PHAsset]) in
+                self.teacherAddImg.image = UploadImage().getAssetThumbnail(asset: assets[0])
+                UploadImage.UploadImageAndGetUrl(path: "images",UUID().uuidString, ImageView: self.teacherAddImg.image!) { (U : URL) in
+            self.ImageURL = U
+            
+        }
+               })
+    }
     
     //Error if text fields are empty
     func error(){
@@ -143,10 +170,18 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         }
     }
     func newTeacher() {
+        
         selectedTeacher.name = teacherNameField.text ?? "سعد"
         selectedTeacher.email = emailField.text ?? "saad@gmail.com"
         selectedTeacher.suggestedWeekdays = daysOfWeekField.text ?? "الثلاثاء، الخميس"
+//        UploadImage.UploadImageAndGetUrl(path: "images", selectedTeacher.name, ImageView: self.teacherAddImg.image!) { (U : URL) in
+//            self.ImageURL = U
+//            
+//        }
+        selectedTeacher.imageurl = ImageURL
+        print(selectedTeacher)
     }
+    
     
     func picker(){
         genderPickerView.delegate = self

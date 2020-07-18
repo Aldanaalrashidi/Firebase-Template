@@ -1,16 +1,26 @@
 PODS:
+  - BSImagePicker (3.2.1)
   - CodableFirebase (0.2.1)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
 
 DEPENDENCIES:
+  - BSImagePicker (~> 3.1)
   - CodableFirebase
+  - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
+    - BSImagePicker
     - CodableFirebase
+    - SDWebImage
 
 SPEC CHECKSUMS:
+  BSImagePicker: 5e87fe42526efdc3fe8ea23d6e4fac9eef43ecfb
   CodableFirebase: 0bf201991eeec35eb9fcd987d271ea463cf34a80
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
 
-PODFILE CHECKSUM: f66e8f665c2e89a7cd98daf2024ed8eee6c891db
+PODFILE CHECKSUM: 59b2d4a95674dd246472fa909034d2ebfd61c9dd
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

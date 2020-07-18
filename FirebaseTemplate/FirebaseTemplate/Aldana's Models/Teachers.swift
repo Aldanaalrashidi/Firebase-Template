@@ -20,5 +20,6 @@ struct Teacher: Codable{
     var suggestedWeekdays: String
     var cost: String
     var stage: String
+    var imageurl: URL!
 }
 

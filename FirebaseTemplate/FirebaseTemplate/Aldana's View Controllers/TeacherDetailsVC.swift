@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 var teacherImgName: String!
 class TeacherDetailsVC: UIViewController {
     var teachers: Teacher!
@@ -16,10 +17,17 @@ class TeacherDetailsVC: UIViewController {
     @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var suggestedWeekdays: UILabel!
     @IBOutlet weak var detailTeacherImg: UIImageView!
+    func DownloadImage(url : URL) {
+        SDWebImageDownloader().downloadImage(with: url, options: .highPriority, progress: {  (receivedSize, expectedSize, url) in
+             // image is being downloading and you can monitor progress here
+        }) { (downloadedImage, data, error, success) in
+            self.detailTeacherImg.image = downloadedImage
+
+        }    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setTeacherData()
-        detailTeacherImg.image = UIImage(named: teacherImgName)
         // Do any additional setup after loading the view.
     }
     
@@ -29,6 +37,8 @@ class TeacherDetailsVC: UIViewController {
         teacherGradeLabel.text = teachers.teachergrade
         costLabel.text = teachers.cost
         suggestedWeekdays.text = teachers.suggestedWeekdays
+        if teachers.imageurl != nil{
+            DownloadImage(url: teachers.imageurl)}
     }
 
     /*
