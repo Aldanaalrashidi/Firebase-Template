@@ -19,6 +19,6 @@ struct Teacher: Codable{
     var email: String
     var suggestedWeekdays: String
     var cost: String
-    var image: String
     var stage: String
 }
+

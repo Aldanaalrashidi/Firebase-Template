@@ -23,127 +23,127 @@ var grade12Subjects: [Subject] = [arabic12, english12, math12, islam12]
 
 // MARK:- 6th grade
 var math6: Subject = Subject(title: MATH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف السادس", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السادس", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف السادس", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السادس", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var english6 : Subject = Subject(title: ENGLISH, teachers:  [
-    Teacher(name: "أحمد", teachergrade: "الصف السادس", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السادس", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف السادس", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السادس", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var arabic6: Subject = Subject(title: ARABIC, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف السادس", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السادس", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف السادس", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السادس", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var islam6: Subject = Subject(title: ISLAM, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف السادس", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السادس", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف السادس", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السادس", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 
 // MARK:- 7th grade
 var math7: Subject = Subject(title: MATH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف السابع", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السابع", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف السابع", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السابع", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var english7: Subject = Subject(title: ENGLISH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف السابع", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السابع", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف السابع", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السابع", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var arabic7: Subject = Subject(title: ARABIC, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف السابع", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السابع", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف السابع", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السابع", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var islam7: Subject = Subject(title: ISLAM, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف السابع", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السابع", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف السابع", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف السابع", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 
 // MARK:- 8th grade
 var math8: Subject = Subject(title: MATH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف الثامن", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف الثامن", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف الثامن", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف الثامن", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var english8: Subject = Subject(title: ENGLISH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف الثامن", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف الثامن", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف الثامن", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف الثامن", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var arabic8: Subject = Subject(title: ARABIC, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف الثامن", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف الثامن", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف الثامن", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف الثامن", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var islam8: Subject = Subject(title: ISLAM, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف الثامن", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف الثامن", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف الثامن", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف الثامن", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 
 // MARK:- 9th grade
 var math9: Subject = Subject(title: MATH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف التاسع", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف التاسع", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف التاسع", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف التاسع", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var english9: Subject = Subject(title: ENGLISH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف التاسع", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف التاسع", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف التاسع", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف التاسع", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var arabic9: Subject = Subject(title: ARABIC, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف التاسع", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف التاسع", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف التاسع", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف التاسع", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 var islam9: Subject = Subject(title: ISLAM, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف التاسع", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف التاسع", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة المتوسطة"),
+    Teacher(name: "أحمد", teachergrade: "الصف التاسع", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"), Teacher(name: "محمود", teachergrade: "الصف التاسع", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة المتوسطة"),
     
 ])
 
 // MARK:- 10th grade
 var math10: Subject = Subject(title: MATH, teachers:[
-    Teacher(name: "أحمد", teachergrade: "الصف العاشر", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف العاشر", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "أحمد", teachergrade: "الصف العاشر", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف العاشر", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 var english10: Subject = Subject(title: ENGLISH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف العاشر", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف العاشر", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "أحمد", teachergrade: "الصف العاشر", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف العاشر", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 var arabic10: Subject = Subject(title: ARABIC, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف العاشر", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف العاشر", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "أحمد", teachergrade: "الصف العاشر", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف العاشر", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 var islam10: Subject = Subject(title: ISLAM, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف العاشر", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف العاشر", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "أحمد", teachergrade: "الصف العاشر", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف العاشر", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 
 // MARK:- 11th grade
 var math11: Subject = Subject(title: MATH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف الحادي عشر", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف العاشر", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "أحمد", teachergrade: "الصف الحادي عشر", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف العاشر", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 var english11: Subject = Subject(title: ENGLISH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف الحادي عشر", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الحادي عشر", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "أحمد", teachergrade: "الصف الحادي عشر", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الحادي عشر", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 var arabic11: Subject = Subject(title: ARABIC, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف الحادي عشر", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الحادي عشر", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "أحمد", teachergrade: "الصف الحادي عشر", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الحادي عشر", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 var islam11: Subject = Subject(title: ISLAM, teachers: [
-    Teacher(name: "أحمد", teachergrade:"الصف الحادي عشر", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الحادي عشر", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "أحمد", teachergrade:"الصف الحادي عشر", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الحادي عشر", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 
 // MARK:- 12th grade
 var math12: Subject = Subject(title: MATH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف الثاني عشر", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الثاني عشر", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "أحمد", teachergrade: "الصف الثاني عشر", subjectName: "رياضيات", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الثاني عشر", subjectName: "رياضيات", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 var english12: Subject = Subject(title: ENGLISH, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف الثاني عشر", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الثاني عشر", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "أحمد", teachergrade: "الصف الثاني عشر", subjectName: "اللغة الانجليزية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الثاني عشر", subjectName: "اللغة الانجليزية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 var arabic12: Subject = Subject(title: ARABIC, teachers: [
-    Teacher(name: "أحمد", teachergrade: "الصف الثاني عشر", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الثاني عشر", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "أحمد", teachergrade: "الصف الثاني عشر", subjectName: "اللغة العربية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الثاني عشر", subjectName: "اللغة العربية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 var islam12: Subject = Subject(title: ISLAM, teachers: [
-    Teacher(name: "سعد", teachergrade:"الصف الثاني عشر", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الثاني عشر", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", image: "ppp", stage: "المرحلة الثانوية"),
+    Teacher(name: "سعد", teachergrade:"الصف الثاني عشر", subjectName: "اسلامية", email: "ahmad@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"), Teacher(name: "محمود", teachergrade: "الصف الثاني عشر", subjectName: "اسلامية", email: "mahmod@gmail.com", suggestedWeekdays: "الاحد و الخميس", cost: "١٠ دك", stage: "المرحلة الثانوية"),
     
 ])
 

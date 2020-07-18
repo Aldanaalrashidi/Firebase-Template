@@ -13,8 +13,10 @@ class ListCellVC: UITableViewCell {
     @IBOutlet weak var teacherName: UILabel!
     @IBOutlet weak var teacherImg: UIImageView!
     
+    @IBOutlet weak var subjectInCell: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+//        teacherImg.image = UIImage(named: teacherImgName)
         // Initialization code
     }
 
@@ -25,5 +27,6 @@ class ListCellVC: UITableViewCell {
     }
     func callCell(for teacher: Teacher) {
         teacherName.text = teacher.name
+        subjectInCell.text = teacher.subjectName
     }
 }

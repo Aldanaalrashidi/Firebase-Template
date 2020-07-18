@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+var teacherImgName: String!
 class TeacherDetailsVC: UIViewController {
     var teachers: Teacher!
     @IBOutlet weak var teacherNameLabel: UILabel!
@@ -15,10 +15,11 @@ class TeacherDetailsVC: UIViewController {
     @IBOutlet weak var teacherGradeLabel: UILabel!
     @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var suggestedWeekdays: UILabel!
-    
+    @IBOutlet weak var detailTeacherImg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         setTeacherData()
+        detailTeacherImg.image = UIImage(named: teacherImgName)
         // Do any additional setup after loading the view.
     }
     

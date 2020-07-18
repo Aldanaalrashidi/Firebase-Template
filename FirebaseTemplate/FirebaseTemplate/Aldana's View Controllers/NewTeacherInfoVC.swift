@@ -9,10 +9,10 @@
 import UIKit
 import Firebase
 import CodableFirebase
-
+ 
 class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    var selectedTeacher: Teacher = Teacher(name: "", teachergrade: "", subjectName: "", email: "", suggestedWeekdays: "", cost: "", image: "", stage: "")
+   var selectedTeacher: Teacher = Teacher(name: "", teachergrade: "", subjectName: "", email: "", suggestedWeekdays: "", cost: "", stage: "")
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
            return 1
        }
