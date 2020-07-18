@@ -117,6 +117,7 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         tags()
         alignment()
         placeHolder()
+        teacherAddImg.layer.cornerRadius = teacherAddImg.frame.width / 2
     }
     
     // var collectionName = ""
@@ -265,8 +266,11 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        //verified speech & teacher terms
         if segue.identifier == "new teacher verification"{
             let verify = segue.destination as! VerifiedVC
+            //verify female/ male teacher
             if teacherGenderField.text == "ذكر" {
               verify.verifyWho = "تم إضافة مدرس جديد"
             } else if teacherGenderField.text == "أنثى" {

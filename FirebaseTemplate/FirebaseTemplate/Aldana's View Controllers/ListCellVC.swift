@@ -24,6 +24,7 @@ class ListCellVC: UITableViewCell {
     @IBOutlet weak var subjectInCell: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        teacherImg.layer.cornerRadius = teacherImg.frame.width / 2
 //        teacherImg.image = UIImage(named: teacherImgName)
         // Initialization code
     }

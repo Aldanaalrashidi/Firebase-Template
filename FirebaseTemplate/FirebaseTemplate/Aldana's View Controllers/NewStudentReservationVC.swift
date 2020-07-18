@@ -134,6 +134,7 @@ class NewStudentReservationVC: UIViewController,UIPickerViewDataSource, UIPicker
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // verify
         if segue.identifier == "verified"{
             let verify = segue.destination as! VerifiedVC
             verify.verifyWho = "سيصلك ايميل خلال ٢٤ ساعة من المدرس إما بالتأكيد أو الرفض"

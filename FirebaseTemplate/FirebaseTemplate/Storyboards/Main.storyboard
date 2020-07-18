@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1702.8985507246377" y="101.78571428571428"/>
+            <point key="canvasLocation" x="1771" y="145"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4rn-Wu-UOe">
@@ -138,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEE-zt-EQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2416" y="102"/>
+            <point key="canvasLocation" x="2483" y="145"/>
         </scene>
         <!--Middle School GradesVC-->
         <scene sceneID="g1G-uW-hOf">
@@ -152,14 +152,14 @@
                                 <rect key="frame" x="1" y="-42" width="413" height="884"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxG-zp-vqU">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxG-zp-vqU">
                                 <rect key="frame" x="38" y="513" width="339" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="ifTapped:" destination="2Qc-sP-fPq" eventType="touchUpInside" id="GYs-Ma-Fzx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkT-vM-jPe">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkT-vM-jPe">
                                 <rect key="frame" x="38" y="384" width="339" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -173,7 +173,7 @@
                                     <action selector="ifTapped:" destination="2Qc-sP-fPq" eventType="touchUpInside" id="tun-Yp-lXK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovy-f2-WoE">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovy-f2-WoE">
                                 <rect key="frame" x="38" y="645" width="339" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -226,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ghb-So-zSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3215.9420289855075" y="-255.13392857142856"/>
+            <point key="canvasLocation" x="3216" y="-213"/>
         </scene>
         <!--High School GradesVC-->
         <scene sceneID="Wbc-aK-Pmb">
@@ -314,14 +314,14 @@
                                 <rect key="frame" x="-5" y="-56" width="419" height="898"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-Nl-shP">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-Nl-shP">
                                 <rect key="frame" x="42" y="315" width="156" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="subjectTapped:" destination="86l-PA-Kvr" eventType="touchUpInside" id="auj-ja-WXD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lW8-Xv-1TE">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lW8-Xv-1TE">
                                 <rect key="frame" x="42" y="522" width="156" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -335,7 +335,7 @@
                                     <action selector="subjectTapped:" destination="86l-PA-Kvr" eventType="touchUpInside" id="cag-cX-aRY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6B-BC-Zoz">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6B-BC-Zoz">
                                 <rect key="frame" x="224" y="522" width="156" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -411,7 +411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2D-zI-0x0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4041" y="35"/>
+            <point key="canvasLocation" x="3935" y="145"/>
         </scene>
         <!--Detail TermsVC-->
         <scene sceneID="TXA-4Q-BYQ">
@@ -433,7 +433,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRs-te-FI6">
-                                <rect key="frame" x="26" y="350" width="362" height="435"/>
+                                <rect key="frame" x="26" y="348" width="362" height="435"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lateef" family="Lateef" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -458,7 +458,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVW-P3-9fu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2416" y="809"/>
+            <point key="canvasLocation" x="2484" y="819"/>
         </scene>
         <!--New Teacher InfoVC-->
         <scene sceneID="Fxk-3s-5E6">
@@ -605,7 +605,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iac-7n-NKo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whitebg" translatesAutoresizingMaskIntoConstraints="NO" id="Iac-7n-NKo">
                                 <rect key="frame" x="132" y="42" width="152" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -638,7 +638,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2GH-RM-j8d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1702.8985507246377" y="808.92857142857144"/>
+            <point key="canvasLocation" x="1770" y="819"/>
         </scene>
         <!--TermsVC-->
         <scene sceneID="D1P-n0-bEq">
@@ -695,7 +695,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8y-Ht-4VB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="445"/>
+            <point key="canvasLocation" x="1023" y="518"/>
         </scene>
         <!--Teachers ListVC-->
         <scene sceneID="uPQ-3U-v2j">
@@ -718,20 +718,20 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="ZsZ-Uj-huG">
-                                            <rect key="frame" x="282" y="22" width="86" height="84"/>
+                                            <rect key="frame" x="282" y="22" width="83" height="83"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="المادة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ST-Pn-jGD">
-                                            <rect key="frame" x="53" y="77" width="202" height="21"/>
+                                            <rect key="frame" x="54" y="77" width="202" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Lateef" family="Lateef" pointSize="27"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الاسم" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPd-eF-Lir">
-                                            <rect key="frame" x="103" y="23" width="160" height="42"/>
+                                            <rect key="frame" x="39" y="23" width="225" height="42"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Lateef" family="Lateef" pointSize="35"/>
+                                            <fontDescription key="fontDescription" name="Lateef" family="Lateef" pointSize="33"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -756,7 +756,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="opc-dm-qvo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5107" y="-85"/>
+            <point key="canvasLocation" x="4677" y="145"/>
         </scene>
         <!--Teacher DetailsVC-->
         <scene sceneID="AoS-5c-XrF">
@@ -855,7 +855,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="RRU-9C-s2S">
-                                <rect key="frame" x="131" y="52" width="152" height="130"/>
+                                <rect key="frame" x="142" y="66" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -874,7 +874,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbg-Xd-StL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4882.608695652174" y="657.58928571428567"/>
+            <point key="canvasLocation" x="4677" y="819"/>
         </scene>
         <!--New Student ReservationVC-->
         <scene sceneID="qM2-Xd-fpV">
@@ -1031,7 +1031,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtC-BH-8qZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4042" y="730"/>
+            <point key="canvasLocation" x="3935" y="819"/>
         </scene>
         <!--VerifiedVC-->
         <scene sceneID="Pbf-MO-UU4">
@@ -1064,7 +1064,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0m-jt-zWW">
-                                <rect key="frame" x="71" y="450" width="270" height="239"/>
+                                <rect key="frame" x="50" y="402" width="309" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lateef" family="Lateef" pointSize="40"/>
                                 <nil key="textColor"/>
@@ -1081,12 +1081,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ra-lF-Y2z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3216" y="1126"/>
+            <point key="canvasLocation" x="3216" y="1085"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pqp-Es-0kK"/>
-        <segue reference="Kkt-nR-53l"/>
+        <segue reference="rGl-Dv-Jfz"/>
+        <segue reference="CDJ-MO-7Ch"/>
         <segue reference="WfV-N1-Uf5"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1098,6 +1098,7 @@
         <image name="cell" width="386" height="115"/>
         <image name="icon التأكيد" width="85" height="85"/>
         <image name="user" width="512" height="512"/>
+        <image name="whitebg" width="151" height="134"/>
         <image name="الشروط" width="414" height="896"/>
         <image name="الشروط-1" width="414" height="896"/>
         <image name="الصفحة الاولى" width="414" height="896"/>

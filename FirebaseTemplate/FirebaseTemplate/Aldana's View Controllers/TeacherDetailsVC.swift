@@ -29,6 +29,9 @@ class TeacherDetailsVC: UIViewController {
         super.viewDidLoad()
         setTeacherData()
         // Do any additional setup after loading the view.
+        
+        
+        detailTeacherImg.layer.cornerRadius = detailTeacherImg.frame.width / 2
     }
     
     func setTeacherData(){
