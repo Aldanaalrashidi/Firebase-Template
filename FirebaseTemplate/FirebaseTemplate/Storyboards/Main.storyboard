@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1771" y="145"/>
+            <point key="canvasLocation" x="1825" y="145"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4rn-Wu-UOe">
@@ -138,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEE-zt-EQr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2483" y="145"/>
+            <point key="canvasLocation" x="2535" y="145"/>
         </scene>
         <!--Middle School GradesVC-->
         <scene sceneID="g1G-uW-hOf">
@@ -458,7 +458,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVW-P3-9fu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="819"/>
+            <point key="canvasLocation" x="2535" y="819"/>
         </scene>
         <!--New Teacher InfoVC-->
         <scene sceneID="Fxk-3s-5E6">
@@ -638,7 +638,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2GH-RM-j8d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770" y="819"/>
+            <point key="canvasLocation" x="1825" y="819"/>
         </scene>
         <!--TermsVC-->
         <scene sceneID="D1P-n0-bEq">
@@ -695,7 +695,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8y-Ht-4VB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="518"/>
+            <point key="canvasLocation" x="1152" y="498"/>
         </scene>
         <!--Teachers ListVC-->
         <scene sceneID="uPQ-3U-v2j">
@@ -756,7 +756,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="opc-dm-qvo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4677" y="145"/>
+            <point key="canvasLocation" x="4619" y="145"/>
         </scene>
         <!--Teacher DetailsVC-->
         <scene sceneID="AoS-5c-XrF">
@@ -799,9 +799,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الأيام المقترحة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn6-O3-ASl">
-                                <rect key="frame" x="20" y="591" width="344" height="44"/>
+                                <rect key="frame" x="22" y="587" width="344" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Lateef" family="Lateef" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Lateef" family="Lateef" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -889,7 +889,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbg-Xd-StL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4676.811594202899" y="818.97321428571422"/>
+            <point key="canvasLocation" x="4619" y="819"/>
         </scene>
         <!--New Student ReservationVC-->
         <scene sceneID="qM2-Xd-fpV">
@@ -1102,7 +1102,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="pqp-Es-0kK"/>
-        <segue reference="Kkt-nR-53l"/>
+        <segue reference="yi9-6q-EEl"/>
         <segue reference="WfV-N1-Uf5"/>
     </inferredMetricsTieBreakers>
     <resources>
