@@ -54,9 +54,7 @@ class NewStudentReservationVC: UIViewController,UIPickerViewDataSource, UIPicker
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var areaField: UITextField!
     @IBOutlet weak var addressField: UITextField!
-   
-    
-    
+    @IBOutlet weak var timeField: UITextField!
      //Picker view display
     let day = ["الأحد", "الأثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"]
     let classDuration = ["ساعة", "ساعتين", "٣ ساعات", "٤ ساعات"]
@@ -83,7 +81,7 @@ class NewStudentReservationVC: UIViewController,UIPickerViewDataSource, UIPicker
     func error(){
         if dayField.text == "" || durationField.text == "" || studentNameField.text == "" || emailField.text == "" || areaField.text == "" || addressField.text == "" {
             let alertController = UIAlertController(title: "المعلومات غير مكتملة", message: "أكمل المعلومات بالضغط على زر أكمل", preferredStyle: .alert)
-            let restartAction = UIAlertAction(title: "اكمل", style: .cancel) { (alert) in
+            let restartAction = UIAlertAction(title: "أكمل", style: .cancel) { (alert) in
             }
             alertController.addAction(restartAction)
             present(alertController, animated: true, completion: nil)
@@ -127,6 +125,7 @@ class NewStudentReservationVC: UIViewController,UIPickerViewDataSource, UIPicker
         emailField.attributedPlaceholder = NSAttributedString(string: "ايميلك", attributes:attributes)
         areaField.attributedPlaceholder = NSAttributedString(string: "المنطقة", attributes:attributes)
         addressField.attributedPlaceholder = NSAttributedString(string: "العنوان", attributes:attributes)
+        timeField.attributedPlaceholder = NSAttributedString(string: "الساعة", attributes:attributes)
     }
  
     

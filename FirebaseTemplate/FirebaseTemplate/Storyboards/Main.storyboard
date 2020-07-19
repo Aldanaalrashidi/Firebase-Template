@@ -605,7 +605,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whitebg" translatesAutoresizingMaskIntoConstraints="NO" id="Iac-7n-NKo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="Iac-7n-NKo">
                                 <rect key="frame" x="132" y="42" width="152" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -855,7 +855,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="RRU-9C-s2S">
-                                <rect key="frame" x="142" y="66" width="130" height="130"/>
+                                <rect key="frame" x="144" y="66" width="130" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1020,12 +1020,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="mgq-Rv-sqR"/>
                     <connections>
-                        <outlet property="addressField" destination="jlW-dh-aql" id="pI9-HZ-fA0"/>
+                        <outlet property="addressField" destination="jlW-dh-aql" id="rJg-fT-ZUI"/>
                         <outlet property="areaField" destination="xgu-Qt-5tc" id="znr-Hp-Lp9"/>
                         <outlet property="dayField" destination="yh2-FC-hHr" id="ovY-D6-9be"/>
                         <outlet property="durationField" destination="wKd-I1-PNs" id="IBM-RE-qiw"/>
                         <outlet property="emailField" destination="s4O-fY-Y2P" id="wvp-WD-4SM"/>
                         <outlet property="studentNameField" destination="c6G-mP-Wf5" id="J02-4f-Djw"/>
+                        <outlet property="timeField" destination="fpI-Ys-7t2" id="t1c-SM-aEC"/>
                         <segue destination="gRd-Gd-C5W" kind="presentation" identifier="verified" modalPresentationStyle="fullScreen" id="rGl-Dv-Jfz"/>
                     </connections>
                 </viewController>
@@ -1064,7 +1065,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0m-jt-zWW">
-                                <rect key="frame" x="50" y="402" width="309" height="156"/>
+                                <rect key="frame" x="50" y="402" width="309" height="211"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Lateef" family="Lateef" pointSize="40"/>
                                 <nil key="textColor"/>
@@ -1081,12 +1082,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ra-lF-Y2z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3216" y="1085"/>
+            <point key="canvasLocation" x="3215.9420289855075" y="1084.8214285714284"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rGl-Dv-Jfz"/>
-        <segue reference="CDJ-MO-7Ch"/>
+        <segue reference="pqp-Es-0kK"/>
+        <segue reference="Kkt-nR-53l"/>
         <segue reference="WfV-N1-Uf5"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1098,7 +1099,6 @@
         <image name="cell" width="386" height="115"/>
         <image name="icon التأكيد" width="85" height="85"/>
         <image name="user" width="512" height="512"/>
-        <image name="whitebg" width="151" height="134"/>
         <image name="الشروط" width="414" height="896"/>
         <image name="الشروط-1" width="414" height="896"/>
         <image name="الصفحة الاولى" width="414" height="896"/>

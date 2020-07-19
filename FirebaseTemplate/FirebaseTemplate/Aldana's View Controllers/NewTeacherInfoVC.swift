@@ -164,7 +164,7 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
     func error(){
         if teacherNameField.text == "" || emailField.text == "" || daysOfWeekField.text  == "" || classCostField.text == "" || teacherGenderField.text == "" || stageField.text == "" || classField.text == "" || subjectField.text == "" {
             let alertController = UIAlertController(title: "المعلومات غير مكتملة", message: "أكمل المعلومات بالضغط على زر أكمل", preferredStyle: .alert)
-            let restartAction = UIAlertAction(title: "اكمل", style: .cancel) { (alert) in
+            let restartAction = UIAlertAction(title: "أكمل", style: .cancel) { (alert) in
             }
             alertController.addAction(restartAction)
             present(alertController, animated: true, completion: nil)

@@ -30,7 +30,7 @@ class SubjectsVC: UIViewController {
 //         print("\(gradeTag)U🍕")
         guard didSelect.subjects.count > 0 else{
             let alertController = UIAlertController(title: "انتظر", message: "يتم تحميل المعلومات", preferredStyle: .alert)
-            alertController.addAction(.init(title: "اوكي", style: .cancel, handler: nil))
+            alertController.addAction(.init(title: "انتظر", style: .cancel, handler: nil))
             self.present(alertController, animated: true, completion: nil)
             return
         }
