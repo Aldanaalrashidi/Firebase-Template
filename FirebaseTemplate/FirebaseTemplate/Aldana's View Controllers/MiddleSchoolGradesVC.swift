@@ -47,7 +47,5 @@ class MiddleSchoolGradesVC: UIViewController {
         let vc = segue.destination as! SubjectsVC
         vc.didSelect = Grade(title: selectedGrade, subjects: [])
         vc.gradeTag = selectedTag
-    }
-    
-    
+    }    
 }

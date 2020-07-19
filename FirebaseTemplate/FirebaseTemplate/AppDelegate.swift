@@ -47,9 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    
     func reloadData(){
-        
     }
 
     // MARK: UISceneSession Lifecycle

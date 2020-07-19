@@ -89,5 +89,4 @@ class TeachersListVC: UITableViewController {
             vc.teachers = subject.teachers[index]
         }
     }
-    
 }
