@@ -148,7 +148,7 @@ var islam12: Subject = Subject(title: ISLAM, teachers: [
 ])
 
 // MARK:- grades
- let grades: [Grade] = [grade6, grade7, grade8, grade9, grade10, grade11, grade12]
+let grades: [Grade] = [grade6, grade7, grade8, grade9, grade10, grade11, grade12]
 
 let grade6: Grade = Grade(title: "الصف السادس", subjects: grade6Subjects )
 let grade7: Grade = Grade(title: "الصف السابع", subjects: grade7Subjects)

@@ -228,9 +228,9 @@
 			isa = PBXGroup;
 			children = (
 				574F522724C0E859004197A9 /* Teachers.swift */,
+				5753FA4224C2565D008A34CD /* Subject.swift */,
 				5753FA4024C25652008A34CD /* Grade.swift */,
 				5753FA3E24C25632008A34CD /* GradesDataset.swift */,
-				5753FA4224C2565D008A34CD /* Subject.swift */,
 				571A2F0B24C341FE00DAB4BF /* uploudImage.swift */,
 			);
 			path = "Aldana's Models";

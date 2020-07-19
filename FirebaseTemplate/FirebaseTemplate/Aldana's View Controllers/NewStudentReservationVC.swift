@@ -18,7 +18,7 @@ class NewStudentReservationVC: UIViewController,UIPickerViewDataSource, UIPicker
         case 1:
             return day.count
         case 2:
-           return classDuration.count
+            return classDuration.count
         default:
             return 1
         }
@@ -41,10 +41,10 @@ class NewStudentReservationVC: UIViewController,UIPickerViewDataSource, UIPicker
             dayField.text = day[row]
             dayField.resignFirstResponder()
         case 2:
-        durationField.text = classDuration[row]
-        durationField.resignFirstResponder()
+            durationField.text = classDuration[row]
+            durationField.resignFirstResponder()
         default:
-          return
+            return
         }
     }
     
@@ -55,7 +55,7 @@ class NewStudentReservationVC: UIViewController,UIPickerViewDataSource, UIPicker
     @IBOutlet weak var areaField: UITextField!
     @IBOutlet weak var addressField: UITextField!
     @IBOutlet weak var timeField: UITextField!
-     //Picker view display
+    //Picker view display
     let day = ["الأحد", "الأثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"]
     let classDuration = ["ساعة", "ساعتين", "٣ ساعات", "٤ ساعات"]
     
@@ -127,10 +127,10 @@ class NewStudentReservationVC: UIViewController,UIPickerViewDataSource, UIPicker
         addressField.attributedPlaceholder = NSAttributedString(string: "العنوان", attributes:attributes)
         timeField.attributedPlaceholder = NSAttributedString(string: "الساعة", attributes:attributes)
     }
- 
+    
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // verify
@@ -142,8 +142,8 @@ class NewStudentReservationVC: UIViewController,UIPickerViewDataSource, UIPicker
             vc.whoTerms = "الطالب:"
             vc.whatTerms = " ١- يقوم الطالب بالتسجيل في حصتي وذلك بإدخال البيانات المطلوبة منه أثناء التسجيل.                                                                                ٢- يسجل الطالب حصته ويحدد اليوم والوقت الذي يناسبه، ويمكن له أن يكرر التسجيل لحصص مختلفة كلٍ على حدى.                                                                       ٣- قبول أو رفض الحصة سيكون خلال ٢٤ ساعة بإرسال ايميل للطالب .                                                                         ٤- يمكن للطالب تحديد حصه مع مدرسيين معينين ولكن يترتب على ذلك امكانية رفضها اذا لم تتناسب مع المدرس المحدد.                                                                  ٥ -يتيح للطالب الغاء الحصه قبل بدئها بحد ادنى ٣ ساعات او او اكثر من خلال رسالة عبر الايميل."
         }
-       
+        
     }
     
-
+    
 }

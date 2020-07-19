@@ -11,50 +11,50 @@ import Firebase
 import BSImagePicker
 import CodableFirebase
 import Photos
- 
+
 class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-   var selectedTeacher: Teacher = Teacher(name: "", teachergrade: "", subjectName: "", email: "", suggestedWeekdays: "", cost: "", stage: "",imageurl: URL(string: ""))
+    var selectedTeacher: Teacher = Teacher(name: "", teachergrade: "", subjectName: "", email: "", suggestedWeekdays: "", cost: "", stage: "",imageurl: URL(string: ""))
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-           return 1
-       }
+        return 1
+    }
     var ImageURL : URL?
     
-       
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-           switch pickerView.tag {
-           case 1:
-               return gender.count
-           case 2:
-               return stage.count
-           case 3:
-               return classes.count
-           case 4:
-               return subject.count
-           case 5:
-               return cost.count
-           default:
-               return 1
-           }
-       }
-       
-       func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-           switch pickerView.tag {
-           case 1:
+        switch pickerView.tag {
+        case 1:
+            return gender.count
+        case 2:
+            return stage.count
+        case 3:
+            return classes.count
+        case 4:
+            return subject.count
+        case 5:
+            return cost.count
+        default:
+            return 1
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch pickerView.tag {
+        case 1:
             return gender[row]
-           case 2:
-               return stage[row]
-           case 3:
-               return classes[row]
-           case 4:
-               return subject[row]
-           case 5:
-               return cost[row]
-           default:
-               return "Data not found"
-           }
-       }
-
+        case 2:
+            return stage[row]
+        case 3:
+            return classes[row]
+        case 4:
+            return subject[row]
+        case 5:
+            return cost[row]
+        default:
+            return "Data not found"
+        }
+    }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch pickerView.tag {
         case 1:
@@ -94,7 +94,7 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
     @IBOutlet weak var teacherAddImg: UIImageView!
     @IBOutlet weak var addImgBtn1: UIButton!
     
-   
+    
     //Picker view display
     let gender = ["أنثى", "ذكر"]
     let stage = ["المرحلة المتوسطة", "المرحلة الثانوية"]
@@ -109,7 +109,7 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
     var subjectPickerView = UIPickerView()
     var classCostPickerView = UIPickerView()
     
- 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         inputs()
@@ -120,44 +120,48 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         teacherAddImg.layer.cornerRadius = teacherAddImg.frame.width / 2
     }
     
+    //Firebase test
+    
     // var collectionName = ""
     //var teacher = Teacher(name: "test", teachergrade: "", subjectName: "", email: "", suggestedWeekdays: "", cost: "", image: "", stage: "")
     
     @IBAction func add(_ sender: UIButton) {
         error()
         newTeacher()
-//        if stageField.text == "المرحلة الثانوية"{
-//            collectionName = "HighSchool"
-//        }
+        //        if stageField.text == "المرحلة الثانوية"{
+        //            collectionName = "HighSchool"
+        //        }
+        
         // 1. Retreive the object
         // 2. Update it
         // 3. Send it back
         let encodedTeacher = [try! FirebaseEncoder().encode(selectedTeacher)]
         Firestore
-        .firestore()
+            .firestore()
             .collection(selectedTeacher.teachergrade)
             .document(selectedTeacher.subjectName)
             .updateData(["teachers" : FieldValue.arrayUnion(encodedTeacher)])
     }
+    
     @IBAction func addImgBtn(_ sender: UIButton) {
         
         let imagePicker = ImagePickerController()
         imagePicker.settings.selection.max = 1
-
-               presentImagePicker(imagePicker, select: { (asset) in
-                   // User selected an asset. Do something with it. Perhaps begin processing/upload?
-
-               }, deselect: { (asset : PHAsset) in
-                   // User deselected an asset. Cancel whatever you did when asset was selected.
-               }, cancel: { (assets : [PHAsset]) in
-                   // User canceled selection.
-               }, finish: { (assets : [PHAsset]) in
-                self.teacherAddImg.image = UploadImage().getAssetThumbnail(asset: assets[0])
-                UploadImage.UploadImageAndGetUrl(path: "images",UUID().uuidString, ImageView: self.teacherAddImg.image!) { (U : URL) in
-            self.ImageURL = U
+        
+        presentImagePicker(imagePicker, select: { (asset) in
+            // User selected an asset. Do something with it. Perhaps begin processing/upload?
             
-        }
-               })
+        }, deselect: { (asset : PHAsset) in
+            // User deselected an asset. Cancel whatever you did when asset was selected.
+        }, cancel: { (assets : [PHAsset]) in
+            // User canceled selection.
+        }, finish: { (assets : [PHAsset]) in
+            self.teacherAddImg.image = UploadImage().getAssetThumbnail(asset: assets[0])
+            UploadImage.UploadImageAndGetUrl(path: "images",UUID().uuidString, ImageView: self.teacherAddImg.image!) { (U : URL) in
+                self.ImageURL = U
+                
+            }
+        })
     }
     
     //Error if text fields are empty
@@ -170,15 +174,11 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
             present(alertController, animated: true, completion: nil)
         }
     }
+    
     func newTeacher() {
-        
         selectedTeacher.name = teacherNameField.text ?? "سعد"
         selectedTeacher.email = emailField.text ?? "saad@gmail.com"
         selectedTeacher.suggestedWeekdays = daysOfWeekField.text ?? "الثلاثاء، الخميس"
-//        UploadImage.UploadImageAndGetUrl(path: "images", selectedTeacher.name, ImageView: self.teacherAddImg.image!) { (U : URL) in
-//            self.ImageURL = U
-//            
-//        }
         selectedTeacher.imageurl = ImageURL
         print(selectedTeacher)
     }
@@ -229,7 +229,7 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
             infoError()
         }
         else if teacherGenderField.text != "أنثى" || stageField.text != "المرحلة المتوسطة" {
-             infoError()
+            infoError()
         }
     }
     
@@ -244,7 +244,7 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         present(alertController, animated: true, completion: nil)
     }
     
-     //Place Holder
+    //Place Holder
     func placeHolder() {
         let attributes = [
             NSAttributedString.Key.foregroundColor: UIColor.lightGray,
@@ -259,9 +259,9 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
         classField.attributedPlaceholder = NSAttributedString(string: "الصف", attributes:attributes)
         subjectField.attributedPlaceholder = NSAttributedString(string: "المادة", attributes:attributes)
     }
- 
+    
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
@@ -272,9 +272,9 @@ class NewTeacherInfoVC: UIViewController, UIPickerViewDataSource, UIPickerViewDe
             let verify = segue.destination as! VerifiedVC
             //verify female/ male teacher
             if teacherGenderField.text == "ذكر" {
-              verify.verifyWho = "تم إضافة مدرس جديد"
+                verify.verifyWho = "تم إضافة مدرس جديد"
             } else if teacherGenderField.text == "أنثى" {
-              verify.verifyWho = "تم إضافة مدرسة جديدة"
+                verify.verifyWho = "تم إضافة مدرسة جديدة"
             } else{
                 infoError()
             }

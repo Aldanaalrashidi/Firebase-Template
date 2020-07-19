@@ -13,29 +13,20 @@ import Firebase
 import FirebaseStorage
 class UploadImage {
     
-   static func UploadImageAndGetUrl(path : String, _ ImageName: String, ImageView : UIImage,  complation : @escaping (_ user : URL)->() ) {
-        
-      
-//        guard let data = ImageProfile.pngData() else { return  }
-    
-      guard let data = ImageView.pngData() else {return}
+    static func UploadImageAndGetUrl(path : String, _ ImageName: String, ImageView : UIImage,  complation : @escaping (_ user : URL)->() ) {
+        //        guard let data = ImageProfile.pngData() else { return  }
+        guard let data = ImageView.pngData() else {return}
         let storge = Storage.storage().reference()
         let imageRef = storge.child("\(path)/").child("\(ImageName).png")
         imageRef.putData(data, metadata: nil) { (meta, eror) in
-
+            
             imageRef.downloadURL { (url, eror) in
                 guard let url = url else {return}
                 print(url)
-               complation(url)
-               
+                complation(url)
             }
-        
         }
-        
-       
     }
-
-
     
     func getAssetThumbnail(asset: PHAsset) -> UIImage {
         let manager = PHImageManager.default()
@@ -47,7 +38,6 @@ class UploadImage {
         })
         return thumbnail
     }
-    
 }
 
 

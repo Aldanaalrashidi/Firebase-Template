@@ -25,9 +25,9 @@ class SubjectsVC: UIViewController {
     }
     
     @IBAction func subjectTapped(_ sender: UIButton) {
-//        print("\(didSelect)U🍕")
-//        print("\(sender.tag)U🍕")
-//         print("\(gradeTag)U🍕")
+        //        print("\(didSelect)U🍕")
+        //        print("\(sender.tag)U🍕")
+        //         print("\(gradeTag)U🍕")
         guard didSelect.subjects.count > 0 else{
             let alertController = UIAlertController(title: "انتظر", message: "يتم تحميل المعلومات", preferredStyle: .alert)
             alertController.addAction(.init(title: "انتظر", style: .cancel, handler: nil))
@@ -46,11 +46,11 @@ class SubjectsVC: UIViewController {
         default:
             print("didn't found data")
         }
-       performSegue(withIdentifier: "to list", sender: nil)
+        performSegue(withIdentifier: "to list", sender: nil)
     }
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
